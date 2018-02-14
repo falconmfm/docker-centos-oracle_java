@@ -9,12 +9,12 @@ RUN yum -y --setopt=tsflags=nodocs update && \
 
 # Versión de Java a descargar. Solo válido para Java 8 ( 7 y anteriores requieren de login)
 ENV JAVA_VERSION=8
-ENV JAVA_UPDATE=131 
-ENV JAVA_BUILD=11 
-ENV JAVA_TOKEN=d54c1d3a095b4ff2b6607d096fa80163 
+ENV JAVA_UPDATE=161 
+ENV JAVA_BUILD=12 
+ENV JAVA_TOKEN=2f38c3b165be4555a1fa6e98c45e0808
 
 # Establecemos variables de java 
-ENV JAVA_HOME /import/software/java17_01
+ENV JAVA_HOME /import/software/java18_01
 ENV PATH ${PATH}:${JAVA_HOME}/bin
 
 RUN cd /tmp && \
